@@ -1,1 +1,0 @@
-export const  mongoUrl = "mongodb+srv://api_user:api_user@cluster0nodeapi.rnrmp.mongodb.net/test?retryWrites=true&w=majority" ;

@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import { resolvers } from "./resolvers";
 import { typeDefs } from "./typeDefs";
 import PostsAPI from "./datasources/post";
-import {mongoUrl} from './conts';
+import {mongoUrl} from './contants';
 
 const app = express();
 
