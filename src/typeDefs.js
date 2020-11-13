@@ -6,6 +6,7 @@ type Query {
     notes: [Notes]
     user: [User]
     posts: [Post]
+    getNoteByID(id: ID!) : Notes
 }
 type Notes {
     id: ID!
@@ -25,7 +26,13 @@ type Post {
     title: String
     body: String
 }
+input NotesInput {
+    content:String
+}
+
+
 type Mutation {
     createNote(owner: String!,title:String, category:String, content:String, category:String): Notes!
+    updateNote(id: ID!, input:NotesInput):Notes
   }
 `
